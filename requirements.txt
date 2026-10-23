@@ -1,0 +1,23 @@
+# Tested with Python 3.12 (see .python-version)
+# Core data stack
+numpy==2.3.1
+pandas==2.3.1
+fastparquet==2024.11.0
+scipy==1.16.2
+
+# Modelling
+scikit-learn==1.7.2
+xgboost==3.0.5
+lightgbm==4.6.0
+
+# Deep learning (main2.ipynb only)
+torch==2.8.0
+pytorch-tabnet==4.1.0
+
+# Dataset download (import-dataset.py)
+kagglehub==0.3.12
+
+# Notebooks / plotting
+ipykernel==6.29.5
+matplotlib==3.10.6
+seaborn==0.13.2
