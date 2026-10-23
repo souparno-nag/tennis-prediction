@@ -13,6 +13,7 @@ classifiers, including a stacking ensemble, as described in `paper.txt`.
 | `main1.ipynb` | Data cleaning, feature engineering, and classical ML model comparison. Writes `df_final.parquet`. |
 | `main2.ipynb` | Neural models (PyTorch MLP, TabNet) on the engineered features. |
 | `df_final.parquet` | Output of `main1.ipynb` with engineered features (~6 MB, committed; regenerate rather than re-commit when features change, to keep history small). |
+| `CODE_DOCUMENTATION.md` | Detailed code reference. |
 | `requirements.txt` | Pinned Python dependencies. |
 | `.python-version` | Python version used (3.12). |
 
@@ -59,9 +60,9 @@ Run the notebooks in order (`jupyter lab` or open in VS Code):
    - Evaluates linear models, SVMs, trees/ensembles, kNN, Naive Bayes, discriminant
      analysis, MLP, LightGBM, XGBoost, voting, bagging, boosting, and a
      **stacking ensemble** (LogReg, SVC, XGBoost, GradientBoosting -> LogReg meta-learner).
-2. **`main2.ipynb`**: loads `df_final.parquet` and trains a PyTorch MLP and TabNet.
-   It expects `X_train`/`X_test` from the same split as `main1.ipynb`; run that
-   split first or copy the split cells over.
+2. **`main2.ipynb`**: loads `df_final.parquet`, builds its own split (train 2018-01-01 to 2021-12-31, test from 2022-01-01) and trains a PyTorch MLP and TabNet.
+
+See [CODE_DOCUMENTATION.md](CODE_DOCUMENTATION.md) for a detailed code reference.
 
 ## Notes
 
