@@ -9,10 +9,10 @@ classifiers, including a stacking ensemble, as described in `paper.txt`.
 | File | Purpose |
 |------|---------|
 | `import-dataset.py` | Downloads the ATP dataset from Kaggle via `kagglehub` (`dissfya/atp-tennis-2000-2023daily-pull`). |
-| `atp_tennis.csv` | Raw match data (git-ignored; place it in the project root). |
+| `atp_tennis.csv` | Raw match data (~9 MB, committed). |
 | `main1.ipynb` | Data cleaning, feature engineering, and classical ML model comparison. Writes `df_final.parquet`. |
 | `main2.ipynb` | Neural models (PyTorch MLP, TabNet) on the engineered features. |
-| `df_final.parquet` | Output of `main1.ipynb` with engineered features (git-ignored). |
+| `df_final.parquet` | Output of `main1.ipynb` with engineered features (~6 MB, committed; regenerate rather than re-commit when features change, to keep history small). |
 | `requirements.txt` | Pinned Python dependencies. |
 | `.python-version` | Python version used (3.12). |
 
