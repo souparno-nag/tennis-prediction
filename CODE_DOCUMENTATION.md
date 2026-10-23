@@ -132,7 +132,7 @@ on `X_test`, print accuracy and a `classification_report`.
 | Boosting libraries | LightGBM `LGBMClassifier`, `XGBClassifier` |
 | Ensembles | Soft `VotingClassifier`, two `StackingClassifier`s, Bagging, AdaBoost, GradientBoosting, XGBoost |
 
-**Stacking (paper configuration)**: base learners LogisticRegression, SVC
+**Stacking (main configuration)**: base learners LogisticRegression, SVC
 (`probability=True`), XGBoost, GradientBoosting; meta-learner LogisticRegression.
 An earlier experiment stacks RandomForest + LinearSVC + GradientBoosting.
 

@@ -2,7 +2,7 @@
 
 Predicting the winner of professional men's (ATP) tennis matches from features
 engineered out of historical match records, and benchmarking a wide range of
-classifiers, including a stacking ensemble, as described in `paper.txt`.
+classifiers, including a stacking ensemble.
 
 ## Repository layout
 
@@ -70,4 +70,3 @@ See [CODE_DOCUMENTATION.md](CODE_DOCUMENTATION.md) for a detailed code reference
   chronological, to avoid look-ahead leakage.
 - The Elo/H2H/form loops use `iterrows()` and are slow on the full dataset
   (a few minutes). SVC and stacking are the slowest model cells.
-- `paper.txt` (git-ignored) holds the draft write-up of the approach.
